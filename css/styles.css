@@ -366,6 +366,10 @@ h1,h2,h3,h4,h5,h6,p,ul {
     cursor: pointer;
 }
 
+.checkbox-group {
+    display: flex;
+}
+
 .form-modal-agree {
     display: inline-block;
     font-weight: 400;
@@ -380,9 +384,25 @@ h1,h2,h3,h4,h5,h6,p,ul {
 .custom-check {
     width: 16px;
     height: 15px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    outline: 2px solid var(--main-text-color);
+    outline-offset: -2px;
+
+    border-radius: 4px;
+    }
+
+.check-icon {
+    opacity: 0;
+
+    transition: opacity var(--time-func);
 }
 
+.check-standart:checked + .custom-check .check-icon {
+    opacity: 1;
+}
 
 .agree-href {
 color: var(--accent-color);
