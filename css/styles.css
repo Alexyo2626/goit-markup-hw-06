@@ -205,7 +205,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
     letter-spacing: 0.06em;
 }
 
-.hero .btn {
+.btn {
     display: block;
     margin: 0 auto;
     padding: 10px 32px;
@@ -225,8 +225,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
     transition: background-color var(--time-func);
 }    
 
-.hero .btn:hover,
-.hero .btn:focus {
+.btn:hover,
+.btn:focus {
     background-color: #188CE8;
 }
 
@@ -289,6 +289,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
     background-color: #FFFFFF;
 
     cursor: pointer;
+
+    transition: color var(--time-func);
 }
 
 .icon-close {
@@ -302,6 +304,11 @@ h1,h2,h3,h4,h5,h6,p,ul {
 
 /* Styles for modal form */
 
+.form-modal-group {
+    display: block;
+    position: relative;
+}
+
 .form-title {
     display: inline-block;
     font-weight: 700;
@@ -313,10 +320,17 @@ h1,h2,h3,h4,h5,h6,p,ul {
     margin-bottom: 12px;
 }
 
+.form-icon {
+    position: absolute;
+    top: 28px;
+    left: 10px;
+
+    fill: currentColor;
+}
+
 .form-modal-label {
     display: block;
     margin-bottom: 4px;
-
 
     font-weight: 400;
     font-size: 12px;
@@ -330,9 +344,12 @@ h1,h2,h3,h4,h5,h6,p,ul {
     width: 100%;
     height: 40px;
     margin-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 10px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: border-color var(--time-func);
 }
 
 .form-modal-textarea {
@@ -349,7 +366,31 @@ h1,h2,h3,h4,h5,h6,p,ul {
     cursor: pointer;
 }
 
+.form-modal-agree {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
 
+    margin-bottom: 30px;
+}
+
+.custom-check {
+    width: 16px;
+    height: 15px;
+    
+}
+
+
+.agree-href {
+color: var(--accent-color);
+}
+
+.modal-form .form-btn {
+    padding: 10px 55px;
+}
 
 /* Styles for peculiarities */
 
@@ -633,6 +674,10 @@ h1,h2,h3,h4,h5,h6,p,ul {
 
 /* Join */
 
+.join {
+    margin-right: 90px;
+}
+
 .wrap-footer {
     display: flex;
     align-items: baseline;
@@ -642,7 +687,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
     margin-right: 70px;
 }
 
-.join .text {
+.join .text,
+.subscription-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -663,6 +709,35 @@ h1,h2,h3,h4,h5,h6,p,ul {
 .bottom .socials-link:hover,
 .bottom .socials-link:focus {
     background-color: var(--accent-color);
+}
+
+.subscription-title {
+    display: block;
+}
+
+.form-wrap {
+    display: flex;
+}
+
+.subscription-input {
+    margin-right: 12px;
+    padding: 15px 16px;
+    width: 358px;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.footer-btn {
+    display: flex;
+    align-items: center;
+}
+
+.footer-icon {
+    margin-left: 10px;
+    fill: currentColor;
 }
 
 /* =======================

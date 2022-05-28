@@ -71,14 +71,23 @@
               <form class="modal-form">
                 <label class="form-modal-group">
                   <span class="form-modal-label">Имя</span>
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#person"></use>
+                  </svg>
                   <input class="form-modal-input" type="text" name="user-name" />
                 </label>
                 <label class="form-modal-group">
                   <span class="form-modal-label">Телефон</span>
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#phone"></use>
+                  </svg>
                   <input class="form-modal-input" type="tel" name="user-phone" />
                 </label>
                 <label class="form-modal-group">
                   <span class="form-modal-label">Почта</span>
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#email"></use>
+                  </svg>
                   <input class="form-modal-input" type="email" name="user-email" />
                 </label>
                 <label class="form-modal-group">
@@ -90,12 +99,18 @@
                   ></textarea>
                 </label>
                 <label class="form-modal-group">
-                  <span class="form-modal-label"
-                    >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span
+                  <input class="modal-check-standart" type="checkbox" />
+                  <span class="custom-check">
+                    <svg class="check-icon" width="11" height="8">
+                      <use href="./images/sprite.svg#check"></use>
+                    </svg>
+                  </span>
+                  <span class="form-modal-agree"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a class="agree-href" href="">Условия договора</a></span
                   >
-                  <input class="form-modal-check" type="checkbox" name="check-agree" />
                 </label>
-                <button class="form-btn" type="submit">Отправить</button>
+                <button class="form-btn btn" type="submit">Отправить</button>
               </form>
             </div>
           </div>
@@ -572,6 +587,25 @@
             </li>
           </ul>
         </div>
+        <form class="subscription">
+          <label class="subscription-group">
+            <span class="subscription-title">Подпишитесь на рассылку</span>
+            <div class="form-wrap">
+              <input
+                class="subscription-input"
+                type="email"
+                name="form-email"
+                placeholder="E-mail"
+              />
+              <button class="btn footer-btn" type="submit">
+                Подписаться
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#send"></use>
+                </svg>
+              </button>
+            </div>
+          </label>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
